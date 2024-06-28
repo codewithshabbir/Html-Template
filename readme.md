@@ -1,6 +1,6 @@
 # HTML Template
 
-![HTML Template Preview](./img/hero-banner.png)
+![HTML Template Preview](./img/preview.png)
 
 A responsive HTML template for digital marketing agencies, featuring a hero banner with a call-to-action form and navigation menu.
 
