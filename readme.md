@@ -17,7 +17,7 @@ This project demonstrates a basic HTML template styled with CSS, incorporating:
 
 ## Preview
 
-![Hero Banner](./img/hero-banner.png)
+![HTML Template Preview](./img/preview.png)
 
 ## Installation
 
