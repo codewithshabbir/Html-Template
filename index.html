@@ -8,6 +8,9 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>HTML Template</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,26 +20,48 @@
         <a href="tel:0426 778 289">0426 778 289</a>
     </div>
     <div id="hero-banner">
-        <header>
+        <header id="web-header">
             <img src="./img/Header-Logo.png" alt="Logo">
             <nav>
                 <ul>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="#about-us">About Us</a></li>
                     <li class="dropdown">
                         <a href="#">Services <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                         <ul class="dropdown-content">
-                            <li><a href="#webServicesSection">Website Design</a></li>
-                            <li><a href="#">Google My Business SEO</a></li>
-                            <li><a href="#">Local SEO</a></li>
-                            <li><a href="#">Google Ads</a></li>
-                            <li><a href="#">Social Media Marketing</a></li>
+                            <li><a href="#web-design">Website Design</a></li>
+                            <li><a href="#google-my-business">Google My Business SEO</a></li>
+                            <li><a href="#local-seo">Local SEO</a></li>
+                            <li><a href="#google-ads">Google Ads</a></li>
+                            <li><a href="#social-media-marketing">Social Media Marketing</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#contact-us">Contact Us</a></li>
                     <li id="free-proposal"><a href="#">Free Proposal</a></li>
                 </ul>
             </nav>
         </header>
+        <header id="mobile-header">
+            <nav>
+                <img src="./img/Header-Logo.png" alt="Logo">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </nav>
+            <ul id="mobile-menu" class="hidden">
+                <li><a href="#about-us">About Us</a></li>
+                <li class="dropdown">
+                    <a href="#" id="services-toggle">Services <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <ul class="dropdown-content hidden" id="services-dropdown">
+                        <li><a href="#web-design">Website Design</a></li>
+                        <li><a href="#google-my-business">Google My Business SEO</a></li>
+                        <li><a href="#local-seo">Local SEO</a></li>
+                        <li><a href="#google-ads">Google Ads</a></li>
+                        <li><a href="#social-media-marketing">Social Media Marketing</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact Us</a></li>
+                <li id="free-proposal"><a href="#">Free Proposal</a></li>
+            </ul>
+        </header>
+
         <div class="hero-content">
             <h2>Local businesses require <span>Local marketing</span></h2>
             <p>Enter your email below to get access to our proven SEO and <br> <span> digital marketing tips</span></p>
@@ -50,6 +75,702 @@
             </form>
         </div>
     </div>
+
+
+    <div class="container">
+        <div class="row d-flex justify-content-center align-items-center py-5 my-5">
+            <div class="col-4 col-sm-4 col-md-4 col-lg-2 mx-3">
+                <img src="./img/patner-1.png" class="w-100 py-2 py-sm-2 py-md-2 py-lg-0" alt="">
+            </div>
+            <div class="col-4 col-sm-4 col-md-4 col-lg-2 mx-3">
+                <img src="./img/patner-2.png" class="w-100 py-2 py-sm-2 py-md-2 py-lg-0" alt="">
+            </div>
+            <div class="col-4 col-sm-4 col-md-4 col-lg-2 mx-3">
+                <img src="./img/patner-3.png" class="w-100 py-2 py-sm-2 py-md-2 py-lg-0" alt="">
+            </div>
+            <div class="col-4 col-sm-4 col-md-4 col-lg-2 mx-3">
+                <img src="./img/patner-4.png" class="w-100 py-2 py-sm-2 py-md-2 py-lg-0" alt="">
+            </div>
+            <div class="col-4 col-sm-4 col-md-4 col-lg-2 mx-3">
+                <img src="./img/patner-5.png" class="w-100 py-2 py-sm-2 py-md-2 py-lg-0" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="service-section">
+        <div class="container">
+            <h2 class="text-center">Our Services</h2>
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-sm-12 col-lg-4 mb-4 px-4 py-1">
+                    <div class="card p-5 my-2 d-flex justify-content-center align-items-center">
+                        <img src="./img/services-1.png" width="80" alt="Website Design">
+                        <h2 class="text-center">Website Design</h2>
+                        <p class="text-center">Design a website that your customer’s love. People love visually
+                            appealing websites that draw them to your business. We bring your business to life online.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-4 mb-4 px-4 py-1">
+                    <div class="card p-5 my-2 d-flex justify-content-center align-items-center">
+                        <img src="./img/services-1.png" width="80" alt="Google My Business SEO">
+                        <h2 class="text-center">Google My Business SEO</h2>
+                        <p class="text-center">Optimize your Google My Business profile to attract local customers. We
+                            ensure your business stands out in local searches.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-4 mb-4 px-4 py-1">
+                    <div class="card p-5 my-2 d-flex justify-content-center align-items-center">
+                        <img src="./img/services-1.png" width="80" alt="Local SEO">
+                        <h2 class="text-center">Local SEO</h2>
+                        <p class="text-center">Improve your local search rankings and drive more traffic to your
+                            website. We focus on strategies that help your business succeed locally.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-4 mb-4 px-4 py-1">
+                    <div class="card p-5 my-2 d-flex justify-content-center align-items-center">
+                        <img src="./img/services-1.png" width="80" alt="Google Ads">
+                        <h2 class="text-center">Google Ads</h2>
+                        <p class="text-center">Create and manage effective Google Ads campaigns to reach your target
+                            audience and boost your business visibility and sales.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-4 mb-4 px-4 py-1">
+                    <div class="card p-5 my-2 d-flex justify-content-center align-items-center">
+                        <img src="./img/services-1.png" width="80" alt="Social Media Marketing">
+                        <h2 class="text-center">Social Media Marketing</h2>
+                        <p class="text-center">Engage with your audience and grow your social media presence with our
+                            tailored social media marketing strategies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-us" id="about-us">
+        <div class="container">
+            <h2 class="text-center">About Us</h2>
+            <div class="row d-flex flex-column-reverse d-md-flex flex-md-column d-lg-flex flex-lg-row mx-2 ">
+                <div class="col-lg-6">
+                    <div>
+                        <p>Digital Marketing can be tricky and hard to navigate if you are new to the game.</p>
+                        <p>We built Social scoop to help small businesses harness the power of Google and Social media.
+                            Transparency from the very beginning is something we pride ourselves on. After all, it’s
+                            your business that we work for.</p>
+                        <p>SEO, Google Ads, facebook, Instagram, Twitter and so many more can be hard to juggle. That’s
+                            where Social scoop comes in. Our team of dedicated experts help your business navigate
+                            through the right marketing strategies that works, none of the fluff but all the results.
+                        </p>
+                        <ul>
+                            <li><i class="fa-solid fa-star"></i>Complete transparency</li>
+                            <li><i class="fa-solid fa-star"></i>Custom marketing strategy</li>
+                            <li><i class="fa-solid fa-star"></i>Monthly reporting</li>
+                            <li><i class="fa-solid fa-star"></i>Quarterly strategy review</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="pt-lg-5 mb-5 mb-md-0 mt-md-3">
+                        <img class="w-100" src="./img/about-us.png" alt="about-us">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="web-design" id="web-design">
+        <div class="container">
+            <h2 class="text-center">Website Design</h2>
+            <div class="row d-flex flex-column-reverse d-md-flex flex-md-column d-lg-flex flex-lg-row mx-2 ">
+                <div class="col-lg-6 d-flex flex-column justify-content-center">
+                    <div>
+                        <p>Design a website that your customer’s love. People love visually appealing websites that draw
+                            them to your business. We bring your business to life online.</p>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> Custom built websites starting at $949</li>
+                            <li><i class="fa-solid fa-check"></i> Content written in house</li>
+                            <li><i class="fa-solid fa-check"></i> Google SEO optimized websites to help your business
+                                grow</li>
+                            <li><i class="fa-solid fa-check"></i> Responsive design for all devices (mobile responsive)
+                            </li>
+                        </ul>
+                        <a id="get-a-quote" href="#">Get A Quote</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="pt-lg-5 mb-5 mb-md-0 mt-md-3">
+                        <img class="w-100" src="./img/website-design.png" alt="website-design">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="google-my-business" id="google-my-business">
+        <div class="container">
+            <h2 class="text-center">Google My Business SEO</h2>
+            <div class="row d-flex flex-column-reverse d-md-flex flex-md-column d-lg-flex flex-lg-row mx-2 ">
+                <div class="col-lg-6">
+                    <div class="pt-lg-5 mb-5 mb-md-0 mt-md-3">
+                        <img class="w-100" src="./img/google-my-business.png" alt="website-design">
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex flex-column justify-content-center">
+                    <div>
+                        <p>4 out of every 5 people research local businesses online before visiting in store. Make sure
+                            your business is represented well on Google and ranks first on Google Maps.</p>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i>Start ranking on Google maps from $199/month</li>
+                            <li><i class="fa-solid fa-check"></i>Get your business in the top 3 of Google search</li>
+                            <li><i class="fa-solid fa-check"></i>Rank faster on Google Maps</li>
+                            <li><i class="fa-solid fa-check"></i>Local team of SEO Consultants</li>
+                        </ul>
+                        <a id="get-a-quote" href="#">Get A Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="local-seo" id="local-seo">
+        <div class="container">
+            <h2 class="text-center">Local SEO</h2>
+            <div class="row d-flex flex-column-reverse d-md-flex flex-md-column d-lg-flex flex-lg-row mx-2 ">
+                <div class="col-lg-6 d-flex flex-column justify-content-center">
+                    <div>
+                        <p>Most online searches don’t go beyond the first page of Google, why put your business anywhere
+                            other than the first page?</p>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i>Be the first ranked business in your local Suburbs</li>
+                            <li><i class="fa-solid fa-check"></i>Use geographic location to target customers on Google
+                            </li>
+                            <li><i class="fa-solid fa-check"></i>Grow your local business profits</li>
+                            <li><i class="fa-solid fa-check"></i>Increase foot traffic to your store</li>
+                        </ul>
+                        <a id="get-a-quote" href="#">Get A Quote</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="pt-lg-5 mb-5 mb-md-0 mt-md-3">
+                        <img class="w-100" src="./img/local-seo.png" alt="website-design">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="google-ads" id="google-ads">
+        <div class="container">
+            <h2 class="text-center">Google Ads</h2>
+            <div class="row d-flex flex-column-reverse d-md-flex flex-md-column d-lg-flex flex-lg-row mx-2 ">
+                <div class="col-lg-6 d-flex flex-column justify-content-center">
+                    <div>
+                        <p>Google ads are a simple way of generating instant leads for your business but a well
+                            optimised Google ad can do much more with a lower budget.</p>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i>Google Ads Management starting at $199/month</li>
+                            <li><i class="fa-solid fa-check"></i>Develop a sound strategy to reduce budget and increase
+                                clicks</li>
+                            <li><i class="fa-solid fa-check"></i>Increase conversion rate and reduce cost/lead</li>
+                            <li><i class="fa-solid fa-check"></i>Manually managed cost/click and daily Ads Management
+                            </li>
+                        </ul>
+                        <a id="get-a-quote" href="#">Get A Quote</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="pt-lg-5 mb-5 mb-md-0 mt-md-3">
+                        <img class="w-100" src="./img/website-design.png" alt="website-design">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="social-media-marketing" id="social-media-marketing">
+        <div class="container">
+            <h2 class="text-center">Social Media Marketing</h2>
+            <div class="row d-flex flex-column-reverse d-md-flex flex-md-column d-lg-flex flex-lg-row mx-2 ">
+                <div class="col-lg-6">
+                    <div class="pt-lg-5 mb-5 mb-md-0 mt-md-3">
+                        <img class="w-100"  src="./img/social-media-marketing.png" alt="website-design">
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex flex-column justify-content-center">
+                    <div>
+                        <p>4 out of every 5 people research local businesses online before visiting in store. Make sure
+                            your business is represented well on Google and ranks first on Google Maps.</p>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i>Increase campaign performance</li>
+                            <li><i class="fa-solid fa-check"></i>Create a better brand outreach</li>
+                            <li><i class="fa-solid fa-check"></i>Increase ROI by up to 50%</li>
+                            <li><i class="fa-solid fa-check"></i>Show up where your customers hangout</li>
+                        </ul>
+                        <a id="get-a-quote" href="#">Get A Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="growth-container">
+        <div class="container">
+            <div class="row">
+                <div class="heading-section col-md-12">
+                    <h2 class="text-center">We aren’t just your agency <br>
+                        we are your partner in growth</h2>
+                    <p class="text-center">Here’s what you can expect from us</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="growth-card">
+                        <div>
+                            <img src="./img/Complete Business Audit.png" alt="">
+                        </div>
+                        <div class="ms-3">
+                            <h2>Complete Business Audit</h2>
+                            <p>We’ll analyse your digital channels so we understand what is currently working, and where
+                                there is the most room for growth.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="growth-card">
+                        <div>
+                            <img src="./img/In-Depth Competitor Analysis.png" alt="">
+                        </div>
+                        <div class="ms-3">
+                            <h2>In-Depth Competitor Analysis</h2>
+                            <p>We’ll use our powerful software to monitor your competitor’s marketing strategies, so
+                                we’ll always be one step ahead of them</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="growth-card">
+                        <div>
+                            <img src="./img/Bespoke Growth Strategy.png" alt="">
+                        </div>
+                        <div class="ms-3">
+                            <h2>Bespoke Growth Strategy</h2>
+                            <p>We’ll use our powerful software to monitor your competitor’s marketing strategies, so
+                                we’ll always be one step ahead of them</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="growth-card">
+                        <div>
+                            <img src="./img/Projections for ROI.png" alt="">
+                        </div>
+                        <div class="ms-3">
+                            <h2>Projections for ROI</h2>
+                            <p>We’ll create a detailed forecast of growth, traffic, and revenue, and highlight the KPIs
+                                that will get you there the fastest</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="faqs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="text-center">Frequently Asked Questions</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What does a Digital Marketing Agency do?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Digital marketing can help your business achieve serious visibility and popularity
+                                    online FAST!! A digital agency will offer a range of online tools and techniques
+                                    which, if used right, can radically improve your ranking on Google’s search results
+                                    - exponentially increasing your traffic, clicks and sales!!<br><br>
+
+                                    Search Engine Optimisation (SEO) is at the heart of digital marketing because it
+                                    offers the most effective and exciting results...<br><br>
+
+                                    SEO is all about optimising your website so it appeals to search engines. Following
+                                    Google’s best practice guidelines means your site will be more appealing to
+                                    algorithms. This means that, over time, your site will rise to the top of the search
+                                    results...<br><br>
+
+                                    And what does this mean for you and your business?<br><br>
+
+                                    <ul>
+                                        <li>33% of the online traffic is gained by the site at the top of a Google
+                                            search.</li>
+                                        <li> 75% of users never navigate beyond the first page of the search results.
+                                        </li>
+                                        <li>SEO delivers huge benefits to businesses in the know - if you can make it to
+                                            the top of the search results!!</li>
+                                    </ul><br><br>
+
+                                    First Page is unlike any other digital marketing agency in Australia because we back
+                                    our services with GUARANTEED results. We double down on our industry-leading SEO
+                                    with PPC advertising and eCommerce expertise to offer a full suite of online
+                                    solutions for Australian businesses.<br>
+
+                                    If you’re searching for a digital marketing agency that can help you achieve your
+                                    business goals and deliver serious online success - then make First Page your first
+                                    call!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Do SEO agencies work?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    SEO is a PROVEN strategy to achieve serious online success. More than any other tool
+                                    or technique, it delivers tangible, real-world success for your business. SEO can
+                                    take you from bricks and mortar to online superstardom in just weeks!!<br><br>
+
+                                    A successful digital marketing agency will have a range of tools at its disposal to
+                                    ensure your campaign ACTUALLY works. At First Page, we use a comprehensive selection
+                                    of techniques that we’ve developed over decades in the industry.<br><br>
+
+                                    Our on-page SEO includes keyword research, technical SEO and premium copywriting
+                                    services. Our off-page SEO includes a dedicated backlink building team.<br><br>
+
+                                    Many digital marketing companies struggle to achieve results. They simply can’t
+                                    deliver the traffic, rankings, clicks and sales your business needs to succeed. But
+                                    First Page is different because we offer guaranteed SEO results. We commit to
+                                    concrete traffic and rankings targets and meet with you regularly to discuss our
+                                    progress.<br><br>
+
+                                    You can track the success of your campaign with SENTR, our online diagnostics portal
+                                    that updates in real-time. And, you’ll partner with a dedicated account manager,
+                                    who’ll be your personal point of contact every step of the way.<br><br>
+
+                                    We’re proud to be one of the most successful digital marketing agencies in Australia
+                                    - because our SEO services REALLY work!!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Why is Digital Marketing important?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Today, every enterprising business MUST have a digital marketing strategy. Waiting
+                                    for customers to come to you is not enough. And neither are a few social media
+                                    profiles and a simple website. It’s all about using the most targeted tools to reach
+                                    your audience before your competition does.<br><br>
+
+                                    Digital marketing is all about optimising your site to gain serious visibility and
+                                    unbelievable traffic. It eclipses legacy marketing methods because it has the
+                                    ability to put your business on the world stage. We’re here to introduce your
+                                    products and services to a global audience.<br><br>
+
+                                    And the result? Unrivalled ROI and a chance at unbelievable international
+                                    sales!!<br><br>
+
+                                    Digital marketing has changed the game forever. But most businesses don’t realise
+                                    this. That’s why choosing to work with a great digital agency could be one of the
+                                    smartest decisions you ever make!<br><br>
+
+                                    If you’re searching for SEO, SEM and PPC services from a trusted digital marketing
+                                    agency in Australia, then it’s time to contact First Page. The success of your
+                                    business is at the heart of everything we do - which is why we won’t stop until you
+                                    achieve the results you need!!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    How can digital marketing help small businesses?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    In the wake of COVID-19, small businesses need support more than ever. Digital
+                                    marketing helps SMBs because it delivers game-changing results at a bargain
+                                    price.<br><br>
+
+                                    Our local and national SEO services ensure the local community is choosing to shop
+                                    with your business. We provide unrivalled insight with our keyword analysis -
+                                    uncovering how, when and why your customers use Google. Then, we target “near me”
+                                    and “close by” searches to gain real visibility, sales and revenue.<br><br>
+
+                                    We know what it’s like to be passionate about your business and build a project from
+                                    the ground up. We believe in the potential of our clients and their businesses to
+                                    succeed. It's simply a question of gaining the attention you deserve.<br><br>
+
+                                    Luckily, First Page is the top digital marketing agency in Australia when it comes
+                                    to proven traffic and ranking gains for small businesses. If you need serious online
+                                    sales fast, then there’s no better choice than our dedicated young team!!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    What’s better, SEO or PPC?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    SEO is a suite of services that optimise your website to achieve search engine
+                                    success. Whilst the exact way Google ranks websites are kept secret, there are many
+                                    key ranking factors that consistently achieve results.<br><br>
+
+                                    These include keywords, copy and content, meta-data, schema code, backlinks and many
+                                    other technical factors. These are used to fine-tune your site and boost your search
+                                    rankings.<br><br>
+
+                                    PPC (pay per click) is about achieving a prime position on search engine results
+                                    pages and social media sites with paid advertising. Each time a user clicks your ad,
+                                    you’ll be charged a fee. The cost is fluid and depends upon the competition for your
+                                    chosen keywords, location and target audience.<br><br>
+
+                                    When determining which digital marketing strategy is best, you should consider the
+                                    aims, budget and timeframe of your business. SEO can deliver dependable mid-long
+                                    term growth and visibility. This steadily increases over time whilst offering real
+                                    value for money. PPC is often more pricey but can deliver a deluge of sales fast -
+                                    when your business needs them the most.<br><br>
+
+                                    SEO vs PPC is a hot topic within the digital marketing industry. Whilst many
+                                    marketing agencies will try to sell you simple, out of the box solutions, we take a
+                                    different approach.<br><br>
+
+                                    The First Page team ACTUALLY listens to your needs before building the custom
+                                    solution that’s right for you. We don’t bombard you with jargon or sell you services
+                                    that don’t deliver. And this is why we’re the fastest growing digital marketing
+                                    agency in APAC!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    What digital marketing services do you offer?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    We provide a full suite of digital marketing services for Australian businesses
+                                    looking to make it big online. <br><br>
+
+                                    First Page offers SEO, SEM, Google Ads, social media marketing (including Facebook,
+                                    Instagram and TikTok ads), premium content writing, eCommerce SEO, link building,
+                                    online reputation management and unwanted content removal.<br><br>
+
+                                    We’re the most dependable digital marketing agencies in Australia because we
+                                    ACTUALLY care about the success of your business.<br><br>
+
+                                    Our analysis and insight find the marketing services that are right for you. Then,
+                                    we work hard to deliver guaranteed results, month on month, year on year.<br><br>
+
+                                    And if there’s ever a time when we don’t achieve our targets - you won’t pay until
+                                    we do.<br><br>
+
+                                    Whilst many digital agencies offer SEO services, there’s no other digital marketing
+                                    agency in Australia that can deliver the results that First Page is famous for.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Who needs digital marketing services?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    To remain competitive in today’s increasingly online marketplace, every Australian
+                                    business needs a digital marketing strategy. Regardless of your product or service,
+                                    your target audience needs to know you exist.<br><br>
+
+                                    As a result of COVID-19, we’re witnessing an unprecedented shift to online shopping.
+                                    The future of Australian business is eCommerce. Getting your products seen by as
+                                    many customers as possible is the name of the game.<br><br>
+
+                                    At First Page, our digital marketing services are helping businesses all over
+                                    Australia to navigate this transition. We’re optimising websites for SEO success and
+                                    launching online stores to eCommerce excellence!!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    How do I choose between SEO or SEM?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    SEO and SEM are two of the most commonly used digital marketing strategies and can
+                                    both provide amazing results.<br><br>
+
+                                    SEO delivers a steady stream of long-term organic traffic. Whilst you’ll pay for our
+                                    services, the traffic you achieve is free.<br><br>
+
+                                    SEM provides near-instantaneous traffic - that you’ll pay for by the click.
+                                    Depending on your needs, one strategy may be more appropriate than the other. But at
+                                    First Page, we’re all about creating a dynamic mix of the two.<br><br>
+
+                                    Our digital agency excels in custom-designed campaigns that capitalise on our full
+                                    suite of digital marketing services. We listen to your story and the needs of your
+                                    business before designing a unique strategy that will change the future of your
+                                    business.<br><br>
+
+                                    We’re passionate about seeing brands we love make it big online. Want to be one of
+                                    them? Then contact us now!!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25188.585523601087!2d145.076529!3d-37.893663!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad66a46a602ee23%3A0xf0107e312334d8a5!2s67%20Poath%20Rd%2C%20Murrumbeena%20VIC%203163%2C%20Australia!5e0!3m2!1sen!2sus!4v1721897865069!5m2!1sen!2sus"
+            width="100%" height="360" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <a href="#top-bar" id="back-to-top-button">
+        <i class="fas fa-angle-up"> </i>
+    </a>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 d-flex flex-column justify-content-center">
+                    <a href="#">
+                        <img src="./img/Header-Logo.png" alt="">
+                    </a>
+                    <div class="row">
+                        <div class="col-lg-6 footer-our-service">
+                            <h4>Our Services</h4>
+                            <p><a href="#web-design">Website Design</a> </p>
+                            <p><a href="#google-my-business">Google My Business SEO</a></p>
+                            <p><a href="#local-seo">Local SEO</a> </p>
+                            <p><a href="#google-ads">Google Ads</a> </p>
+                            <p><a href="#social-media-marketing"> Social Media Marketing</a></p>
+                        </div>
+                        <div class="col-lg-6 footer-contact-us">
+                            <h4>Contact Us</h4>
+                            <p class="d-flex align-items-center"><i class="me-3 fa-solid fa-envelope"></i> <span>
+                                    <a href="mailto:info@socialscoop.com.au">info@socialscoop.com.au</a></span></p>
+                            <p class="d-flex align-items-center"><i class="me-3 fa-solid fa-phone"></i> <span> <a
+                                        href="tel:0426778289">0426 778
+                                        289</a> </span></p>
+                            <p class="d-flex align-items-center"><i class="me-3 fa-solid fa-map"></i> <span> <a
+                                        href="https://maps.app.goo.gl/4JqCTQt6aVVCk31r8">67 Poath
+                                        Road, Murrumbeena, VIC 3163</a> </span></p>
+                            <div class="social-icons-container">
+                                <ul class="d-flex ps-0">
+                                    <li>
+                                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 mt-md-5">
+                    <div class="footer-form" id="contact-us">
+                        <h4>We Can Grow Your Sales
+                            ASK US HOW!</h4>
+                        <form action="#" class="px-3">
+                            <input type="text" class="form form-control form-control-lg mb-4" placeholder="Name *"
+                                required>
+                            <input type="email" class="form form-control form-control-lg mb-4" placeholder="Email *"
+                                required>
+                            <input type="number" class="form form-control form-control-lg mb-4" placeholder="Number *"
+                                required>
+                            <textarea name="" class="form form-control form-control-lg mb-4" placeholder="Message *"
+                                id=""></textarea>
+                            <button type="submit" class="py-3 w-100 form-submit-btn">SEND</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="container-fluid copy-right py-3">
+        <div class="row">
+            <div class="col-12">
+                <p class="text-center mb-0 text-white">Copyright © 2024 Social Scoop.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <script>
+        // Toggle mobile menu visibility
+        document.querySelector('#mobile-header .fa-bars').addEventListener('click', function () {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.querySelector('#mobile-header .fa');
+
+            menu.classList.toggle('hidden');
+
+            if (menu.classList.contains('hidden')) {
+                icon.classList.replace('fa-times', 'fa-bars');
+            } else {
+                icon.classList.replace('fa-bars', 'fa-times');
+            }
+        });
+
+        // Toggle services dropdown visibility
+        document.querySelector('#mobile-menu .dropdown').addEventListener('click', function (event) {
+            event.preventDefault();
+            document.getElementById('services-dropdown').classList.toggle('hidden');
+        });
+    </script>
 </body>
 
 </html>
